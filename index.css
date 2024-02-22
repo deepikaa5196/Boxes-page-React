@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  border: 0px;
+}
+
+.color-boxes-container {
+  background-color: #ffffff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.heading {
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .boxes-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.small-box {
+  height: 80px;
+  width: 80px;
+  background-color: #fbbf24;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .small-box {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+  }
+}
+
+.medium-box {
+  height: 120px;
+  width: 120px;
+  background-color: #38bdf8;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .medium-box {
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+  }
+}
+
+.large-box {
+  height: 180px;
+  width: 180px;
+  background-color: #ec4899;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .large-box {
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+
+.box-title {
+  font-family: "Roboto";
+  color: #ffffff;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
